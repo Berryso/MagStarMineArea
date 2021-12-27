@@ -1,0 +1,10 @@
+name: MagStarMineArea
+main: xyz.magstar.minearea.Main
+version: 1.0
+api-version: 1.16
+commands:
+  MagStarMineArea:
+    aliases:
+      - 'magstarma'
+      - 'msma'
+    description: "MagStarMineArea plugin help menu"

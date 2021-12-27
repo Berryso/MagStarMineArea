@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="MagStarMineArea">
+    <output-path>$PROJECT_DIR$/out/artifacts/MagStarMineArea</output-path>
+    <root id="archive" name="MagStarMineArea.jar">
+      <element id="module-output" name="MagStarMineArea" />
+    </root>
+  </artifact>
+</component>

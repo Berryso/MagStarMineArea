@@ -1,0 +1,103 @@
+Version: 1.0.0
+Prefix: '§f[§bMagStar§3MineArea§f]'
+
+EffectiveWorld:  #插件在哪个世界生效
+  - 'world'
+  - '123'
+LevelExecutor: '需要等级'
+Split: '§0-'
+PickaxeExecutor: '镐子'
+AdminExecutor: '区域选取器'
+ExpPerLevel: 1000
+RegisteredBlock:
+  STONE:
+    ExpPerBlock: 1
+    BreakCooldown: 60 #挖掘一个方块后该方块的修复时间。单位：秒
+  COAL_ORE:
+    ExpPerBlock: 2
+    BreakCooldown: 60 #挖掘一个方块后该方块的修复时间。单位：秒
+  IRON_ORE:
+    ExpPerBlock: 3
+    BreakCooldown: 60 #挖掘一个方块后该方块的修复时间。单位：秒
+  GOLD_ORE:
+    ExpPerBlock: 5
+    BreakCooldown: 60 #挖掘一个方块后该方块的修复时间。单位：秒
+  REDSTONE_ORE:
+    ExpPerBlock: 4
+    BreakCooldown: 60 #挖掘一个方块后该方块的修复时间。单位：秒
+  LAPIS_ORE:
+    ExpPerBlock: 5
+    BreakCooldown: 60 #挖掘一个方块后该方块的修复时间。单位：秒
+  DIAMOND_ORE:
+    ExpPerBlock: 10
+    BreakCooldown: 60 #挖掘一个方块后该方块的修复时间。单位：秒
+  EMERALD_ORE:
+    ExpPerBlock: 13
+    BreakCooldown: 60 #挖掘一个方块后该方块的修复时间。单位：秒
+Messages:
+  Upgrade: '§a恭喜您，升级成功！'
+  AlreadyIs: '§c你已经是一名矿工了！正在为你删除数据……'
+  AddPlayerSuccess: '§a选择职业成功！'
+  AlreadyNot: '§c你尚且不是一名矿工！'
+  RemPlayerSuccess: '§a放弃职业成功！'
+  LvlNotEnough: '§c你的等级还不够使用这把镐子！'
+  UsePickaxe: '§c在这个世界中，你不能用这个东西来挖掘！'
+  noPerm: '§c你没有权限做这件事！'
+  Reload: '§a所有配置文件已重载完毕！'
+  SetChance:
+    - '§a设置掉落几率中，你需要在聊天框中输入几率权重（必须为整数值）'
+    - '§a输入非数值会被视为取消设置'
+    - '§a物品掉落几率=该物品权重/所有物品权重'
+  CancelSet: '§c设置已取消。'
+  IncorrectBlock: '§c你所挖掘的方块非可挖掘方块！'
+  OnlyPlayer: '§c这个指令只能由玩家执行！'
+  SaveWorldSuccess: '§a生成世界文件夹成功！'
+  FirstPosition: '§a已选择第一个世界坐标于'
+  SecondPosition: '§a已选择第二个世界坐标于'
+  MineAreaSummon: '§a生成矿区成功！'
+  BlockNotInArea: '§c你所挖的方块不在矿区规定的范围内！'
+ItemSetGui:
+  Name: '有效方块总览'
+  Side:
+    Id: WHITE_STAINED_GLASS_PANE
+    Display: '§e中间的方块是设置中的方块'
+    Lore:
+      - ''
+      - '&fDesigned by &d&oBerry_so'
+  ItemLore:
+    - ''
+    - '&f点击方块以对其进行掉落物配置'
+    - ''
+    - '&fDesigned by &d&oBerry_so'
+DropSetGui:
+  Name: '掉落物品设置台'
+  Side1:
+    Id: RED_STAINED_GLASS_PANE
+    Display: '§e这里是分割线'
+    Lore:
+      - ''
+      - '§fDesigned by §d§oBerry_so'
+  Side2:
+    Id: WHITE_STAINED_GLASS_PANE
+    Display: '§e请将可掉落物品放在此处以进行进一步配置'
+    Lore:
+      - ''
+      - '§fDesigned by §d§oBerry_so'
+  Chance:
+    Id: NAME_TAG
+    Display: '§e点击此处来设置掉落几率'
+    Lore:
+      - ''
+      - '§fDesigned by §d&oBerry_so'
+  Enable:
+    Id: LANTERN
+    Display: '§a已启用。单击来关闭。'
+    Lore:
+      - ''
+      - '§fDesigned by §d§oBerry_so'
+  Disable:
+    Id: SOUL_LANTERN
+    Display: '§c未启用。单击来开启。'
+    Lore:
+      - ''
+      - '§fDesigned by §d§oBerry_so'
