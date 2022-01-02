@@ -16,7 +16,7 @@
 > #### Dependencies: //开发依赖
 >
 *Spigot API-1.18 R0.1-SNAPSHOT*
-> #### Author and Team: //作者及代表团对
+> #### Author and Team: //作者及代表团队
 >
 *Developed by Berry_so //由Berry_so开发*  
 *Represents the Stars Creation //代表Stars Creation星星逹制作组*
